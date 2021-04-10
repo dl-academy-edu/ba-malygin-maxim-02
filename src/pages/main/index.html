@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <title>DLK</title>
+</head>
+<body>
+    @@include("header/index.html")
+    <main class="main container">
+    <h1 class="visible-hidden">DLK main page</h1>
+    <section class="promo-block block">
+        <div class="promo-block-slider">
+        <div class="promo-block-slider-control">
+            <p class="promo-block-slider-page">01</p>
+            <a href="#" class="promo-block-slider-selector selected"> </a>
+            <a href="#" class="promo-block-slider-selector"> </a>
+            <a href="#" class="promo-block-slider-selector"> </a>
+            <a href="#" class="promo-block-slider-selector"> </a>
+        </div>
+        <div class="promo-block-slider-content">
+            <h2 class="block-title">THE OOH NOO COLLECTION</h2>
+            <p class="promo-block-subtitle">Designed in Slovenia</p>
+            <a href="#" class="button" id="popup-open-button">explore now</a>
+        </div>
+        <img
+            src="/static/images/toy.png"
+            alt="image of a toy"
+            class="toy-image"
+            height="461px"
+            width="635px"
+        />
+        </div>
+        <p class="promo-block-footer">
+        Free (continental) USA shipping on all orders of $100 USD or more!
+        </p>
+    </section>
+    <section class="product-block block">
+        <h2 class="block-title">CATEGORY PRODUCTS</h2>
+        <ul class="product-block-list">
+        @@include("product-item/index.html",{ "image-class": "apparel-kids",
+        "text": "APPAREL KIDS" }) @@include("product-item/index.html",{
+        "image-class": "holiday-shop", "text": "HOLIDAY SHOP" })
+        @@include("product-item/index.html",{ "image-class": "toys", "text":
+        "TOYS" }) @@include("product-item/index.html",{ "image-class":
+        "accessories", "text": "ACCESSORIES" })
+        </ul>
+        <div class="product-block-nav">
+        <button class="button-scroll scroll-left"></button>
+        <button class="button-scroll scroll-right"></button>
+        <p class="product-block-nav-text">
+            Modern finds for the modern home. Curated goods by unique designers
+            around the world from fashion to furniture for kids and adults.
+        </p>
+        </div>
+    </section>
+    <section class="services-block block">
+        <h2 class="visible-hidden">Our services</h2>
+        <div class="services-block-inner">
+        <div class="services-block-image">
+            <img
+            src="/static/images/woman.jpg"
+            alt="woman in dress smiling"
+            class="woman-in-dress"
+            height="559px"
+            width="480px"
+            />
+        </div>
+        <div class="services-block-text">
+            <div class="services-block-menu">
+            <h3 class="block-title services-block-menu-title">DELIVERY</h3>
+            <a
+                href="#"
+                class="services-block-menu-item services-block-menu-item-selected"
+            >
+                Delivery</a
+            >
+            <a href="#" class="services-block-menu-item"> Guarantee</a>
+            <a href="#" class="services-block-menu-item"> Credit</a>
+            </div>
+            <div class="services-block-content">
+            <div class="services-block-content-inner">
+                <p>
+                Some days i feel like i've been working on dlk my entire life
+                and there are other days that i am completely shocked that
+                four years have flown by. It's simply magical.
+                </p>
+                <p>
+                What started as an outlet to deal with the traumatic loss of
+                my husband, dlk has now become a truly happy place for me and
+                i have you and all of the beautiful designers that we work
+                with to thank!
+                </p>
+            </div>
+            <a href="#" class="button">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="partners-block block">
+        <h2 class="visible-hidden">our partners</h2>
+        <ul class="partners-block-list">
+        <li>
+            <a href="#" class="partners-block-list-link"
+            ><img
+                src="/static/images/logos/mailru.png"
+                alt="mailru logo"
+                height="60px"
+                width="193px"
+            /></a>
+        </li>
+        <li>
+            <a href="#" class="partners-block-list-link"
+            ><img
+                src="/static/images/logos/apple.png"
+                alt="apple logo"
+                height="61px"
+                width="179px"
+            /></a>
+        </li>
+        <li>
+            <a href="#" class="partners-block-list-link"
+            ><img
+                src="/static/images/logos/eltex.png"
+                alt="eltex logo"
+                height="46px"
+                width="216px"
+            /></a>
+        </li>
+        <li>
+            <a href="#" class="partners-block-list-link"
+            ><img
+                src="/static/images/logos/owox.png"
+                alt="owox logo"
+                height="40px"
+                width="211px"
+            /></a>
+        </li>
+        </ul>
+    </section>
+    <div class="buy-and-contacts-block-wrapper block">
+        <section class="buy-and-contacts-block buy-block">
+        <h2 class="block-title">DESIGN LIFE KIDS</h2>
+        <h3 class="buy-and-contacts-block-subtitle">About Us</h3>
+        <p class="buy-text">
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+        </p>
+        <a href="#" class="button">buy now</a>
+        </section>
+        <section class="buy-and-contacts-block">
+        <h2 class="block-title">CONTACTS</h2>
+        <p class="contacts-text">
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+        </p>
+        <img
+            src="/static/images/map.png"
+            alt="map"
+            class="contacts-map"
+            height="196"
+            width="483px"
+        />
+        </section>
+    </div>
+    </main>
+    @@include("footer/index.html")
+    <script src="scripts.js"></script>
+</body>
+</html>
